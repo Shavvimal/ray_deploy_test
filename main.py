@@ -20,7 +20,7 @@ class TestAPI:
         return "Welcome to the API"
 
     @app.post("/double")
-    async def reports(self, request: PnLItem):
+    async def double(self, request: PnLItem):
         pnl_value = request.pnl
         return {"pnl_double": pnl_value*2}
        
