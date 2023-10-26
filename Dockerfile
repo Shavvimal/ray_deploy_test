@@ -8,7 +8,7 @@ WORKDIR /serve_app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# copy requirements file
+# Copy App
 COPY main.py /serve_app/main.py
 
 # install dependencies
