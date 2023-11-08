@@ -6,7 +6,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
     # See `ingress.md` for more details about how to choose subnets.
-    alb.ingress.kubernetes.io/subnets: subnet-0c3c84c06f8271d9f, subnet-0e82ba70b474d8b1a
+    alb.ingress.kubernetes.io/subnets: subnet-xxxx,subnet-xxxx
     alb.ingress.kubernetes.io/target-type: ip
     # Health Check Settings. Health check is needed for
     # ALB to route traffic to the healthy pod.

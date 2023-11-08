@@ -7,13 +7,9 @@ grpc_options:
   port: 9000
   grpc_servicer_functions: []
 applications:
-  - name: app1
-    route_prefix: /
-    import_path: main:app
-    runtime_env:
-      pip:
-        - fastapi
-        - pydantic
-    runtime_env: {}
-    deployments:
-      - name: TestAPI
+- name: app1
+  route_prefix: /
+  import_path: app.main:app
+  runtime_env: {}
+  deployments:
+  - name: TestAPI

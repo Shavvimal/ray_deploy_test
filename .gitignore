@@ -1,4 +1,5 @@
 .vscode
+.idea
 # Shav Notes
 shav-notes.md
 # Credentials
@@ -14,6 +15,8 @@ __pycache__/
 
 # C extensions
 *.so
+
+eksctl.exe
 
 # Distribution / packaging
 .Python

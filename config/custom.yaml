@@ -7,11 +7,12 @@ spec:
   deploymentUnhealthySecondThreshold: 300
   serveConfigV2: |
     applications:
-      - name: app1
-        route_prefix: /
-        import_path: main:app
-        deployments:
-          - name: TestAPI
+    - name: app1
+      route_prefix: /
+      import_path: app.main:app
+      runtime_env: {}
+      deployments:
+      - name: TestAPI
   rayClusterConfig:
     rayVersion: "2.7.0" # Should match Ray version in the containers
     headGroupSpec:
